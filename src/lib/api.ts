@@ -2,7 +2,7 @@ import { Recipe } from "@/context/RecipeContext";
 import { withCache } from "./cache";
 import { MOCK_RECIPES } from "./mockData";
 
-const API_KEY = "3e85a4e1b715445cae2a9e60b42d0329";
+const API_KEY = "debd495fb42440b6aa4d9ee932ec8951";
 const BASE_URL = "https://api.spoonacular.com";
 
 // Max retries for API requests
