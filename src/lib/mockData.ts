@@ -1,0 +1,213 @@
+import { Recipe } from "@/context/RecipeContext";
+
+export const MOCK_RECIPES: Recipe[] = [
+  {
+    id: 1001,
+    title: "Classic Margherita Pizza",
+    image: "https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg?h=350&w=500&auto=compress&fit=crop",
+    cuisine: "Italian",
+    ingredients: [
+      "1 pizza dough ball", 
+      "1/2 cup pizza sauce", 
+      "8 oz fresh mozzarella, sliced", 
+      "Fresh basil leaves",
+      "2 tbsp olive oil",
+      "Salt and pepper to taste"
+    ],
+    readyInMinutes: 30,
+    servings: 2,
+    instructions: [
+      "Preheat oven to 475°F (245°C) with a pizza stone if available.",
+      "Roll out the pizza dough on a floured surface to desired thickness.",
+      "Spread pizza sauce evenly over the dough, leaving a 1/2-inch border.",
+      "Arrange mozzarella slices over the sauce.",
+      "Bake for 10-12 minutes until crust is golden and cheese is bubbly.",
+      "Remove from oven and immediately top with fresh basil leaves.",
+      "Drizzle with olive oil, sprinkle with salt and pepper.",
+      "Slice and serve immediately."
+    ],
+    summary: "A classic Margherita pizza with a crispy crust, tangy tomato sauce, fresh mozzarella, and aromatic basil leaves. This traditional Italian favorite is simple yet incredibly flavorful.",
+    vegetarian: true,
+    glutenFree: false,
+    dairyFree: false,
+    healthScore: 65
+  },
+  {
+    id: 1002,
+    title: "Thai Green Curry with Vegetables",
+    image: "https://images.pexels.com/photos/461382/pexels-photo-461382.jpeg?h=350&w=500&auto=compress&fit=crop",
+    cuisine: "Thai",
+    ingredients: [
+      "1 can (14 oz) coconut milk",
+      "3 tbsp green curry paste",
+      "1 cup mixed vegetables (bell peppers, zucchini, carrots)",
+      "1 cup tofu, cubed",
+      "1 tbsp vegetable oil",
+      "1 tbsp soy sauce",
+      "1 tsp sugar",
+      "Fresh Thai basil leaves",
+      "Steamed jasmine rice for serving"
+    ],
+    readyInMinutes: 25,
+    servings: 4,
+    instructions: [
+      "Heat oil in a large pot over medium heat.",
+      "Add curry paste and stir-fry for 1 minute until fragrant.",
+      "Pour in half the coconut milk and bring to a simmer.",
+      "Add vegetables and tofu, then pour in remaining coconut milk.",
+      "Add soy sauce and sugar, stir well.",
+      "Simmer for 10-15 minutes until vegetables are tender.",
+      "Stir in Thai basil leaves just before serving.",
+      "Serve hot with steamed jasmine rice."
+    ],
+    summary: "A fragrant and flavorful Thai green curry loaded with colorful vegetables and tofu. This quick and easy dish brings authentic Thai flavors to your table in less than 30 minutes.",
+    vegetarian: true,
+    vegan: true,
+    glutenFree: true,
+    dairyFree: true,
+    healthScore: 78
+  },
+  {
+    id: 1003,
+    title: "Avocado Toast with Poached Egg",
+    image: "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?h=350&w=500&auto=compress&fit=crop",
+    cuisine: "American",
+    ingredients: [
+      "2 slices whole grain bread",
+      "1 ripe avocado",
+      "2 eggs",
+      "1 tbsp white vinegar",
+      "Red pepper flakes (optional)",
+      "Salt and pepper to taste",
+      "1/2 lemon, juiced",
+      "Fresh herbs (parsley or cilantro)"
+    ],
+    readyInMinutes: 15,
+    servings: 2,
+    instructions: [
+      "Toast the bread until golden and crisp.",
+      "Mash the avocado with lemon juice, salt and pepper.",
+      "Bring a pot of water to a gentle simmer, add vinegar.",
+      "Crack eggs into cups, then carefully slide into the simmering water.",
+      "Poach eggs for 3-4 minutes for a runny yolk.",
+      "Spread mashed avocado on toast slices.",
+      "Top each with a poached egg.",
+      "Season with salt, pepper, red pepper flakes, and herbs."
+    ],
+    summary: "A nutritious and satisfying breakfast of creamy avocado toast topped with perfectly poached eggs. This simple yet impressive dish is packed with healthy fats and protein to keep you energized.",
+    vegetarian: true,
+    glutenFree: false,
+    dairyFree: true,
+    healthScore: 85
+  },
+  {
+    id: 1004,
+    title: "Paneer Tikka Masala",
+    image: "https://images.pexels.com/photos/461382/pexels-photo-461382.jpeg?h=350&w=500&auto=compress&fit=crop",
+    cuisine: "Indian",
+    ingredients: [
+      "400g paneer, cubed",
+      "1 cup yogurt",
+      "2 tbsp lemon juice",
+      "1 tbsp ginger-garlic paste",
+      "2 tbsp tandoori masala",
+      "1 onion, finely chopped",
+      "2 tomatoes, pureed",
+      "1 tbsp garam masala",
+      "1 tsp turmeric",
+      "1 tsp cumin",
+      "2 tbsp cream",
+      "Fresh coriander leaves"
+    ],
+    readyInMinutes: 40,
+    servings: 4,
+    instructions: [
+      "Marinate paneer in yogurt, lemon juice, ginger-garlic paste, and tandoori masala for 30 minutes.",
+      "Preheat oven to 400°F (200°C), thread paneer on skewers, and bake for 10 minutes until golden.",
+      "In a pan, heat oil and sauté onions until golden brown.",
+      "Add tomato puree, turmeric, cumin, and garam masala. Cook for 5 minutes.",
+      "Add grilled paneer and simmer for 5 minutes.",
+      "Stir in cream and cook for an additional 2 minutes.",
+      "Garnish with fresh coriander leaves and serve with naan or rice."
+    ],
+    summary: "Paneer Tikka Masala features grilled Indian cottage cheese in a rich, creamy tomato sauce. This vegetarian comfort food is a restaurant favorite that's easy to recreate at home.",
+    vegetarian: true,
+    glutenFree: true,
+    dairyFree: false,
+    healthScore: 70
+  },
+  {
+    id: 1005,
+    title: "Vegetable Sushi Rolls",
+    image: "https://images.pexels.com/photos/357756/pexels-photo-357756.jpeg?h=350&w=500&auto=compress&fit=crop",
+    cuisine: "Japanese",
+    ingredients: [
+      "2 cups sushi rice",
+      "1/4 cup rice vinegar",
+      "2 tbsp sugar",
+      "1 tsp salt",
+      "5 nori sheets",
+      "1 cucumber, julienned",
+      "1 avocado, sliced",
+      "1 carrot, julienned",
+      "Soy sauce for serving",
+      "Wasabi and pickled ginger (optional)"
+    ],
+    readyInMinutes: 45,
+    servings: 5,
+    instructions: [
+      "Cook sushi rice according to package instructions.",
+      "Mix rice vinegar, sugar, and salt; fold into cooked rice and cool to room temperature.",
+      "Place a nori sheet on a bamboo sushi mat, shiny side down.",
+      "Spread rice evenly over nori, leaving a 1-inch border at the top.",
+      "Arrange vegetable strips horizontally across the center of the rice.",
+      "Roll the sushi tightly using the bamboo mat, moistening the border to seal.",
+      "Slice each roll into 6-8 pieces with a wet, sharp knife.",
+      "Serve with soy sauce, wasabi, and pickled ginger."
+    ],
+    summary: "Colorful and fresh vegetable sushi rolls are a light and healthy meal or appetizer. These homemade rolls are customizable with your favorite vegetables and are perfect for vegetarians and vegans alike.",
+    vegetarian: true,
+    vegan: true,
+    glutenFree: false,
+    dairyFree: true,
+    healthScore: 82
+  },
+  {
+    id: 1006,
+    title: "Vegetable Stir Fry with Tofu",
+    image: "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?h=350&w=500&auto=compress&fit=crop",
+    cuisine: "Chinese",
+    ingredients: [
+      "400g firm tofu, pressed and cubed",
+      "3 tbsp vegetable oil",
+      "2 tbsp cornstarch",
+      "1 bell pepper, sliced",
+      "1 cup broccoli florets",
+      "1 carrot, sliced",
+      "1 cup snow peas",
+      "2 cloves garlic, minced",
+      "1 tbsp ginger, minced",
+      "3 tbsp soy sauce",
+      "1 tbsp sesame oil",
+      "2 tbsp hoisin sauce",
+      "Sesame seeds for garnish"
+    ],
+    readyInMinutes: 30,
+    servings: 4,
+    instructions: [
+      "Toss tofu cubes in cornstarch and a pinch of salt.",
+      "Heat 2 tbsp oil in a wok or large pan and fry tofu until golden and crisp. Remove and set aside.",
+      "Add remaining oil to the wok and stir-fry garlic and ginger for 30 seconds.",
+      "Add vegetables and stir-fry for 5-7 minutes until crisp-tender.",
+      "Add tofu back to the wok along with soy sauce, hoisin sauce, and sesame oil.",
+      "Toss everything together and cook for another 2 minutes.",
+      "Garnish with sesame seeds and serve over steamed rice."
+    ],
+    summary: "A colorful vegetable stir fry featuring crispy tofu in a savory, slightly sweet sauce. This quick and nutritious meal is packed with protein and fresh vegetables for a balanced dinner option.",
+    vegetarian: true,
+    vegan: true,
+    glutenFree: true,
+    dairyFree: true,
+    healthScore: 88
+  }
+]; 
